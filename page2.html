@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page2.css">
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Calm Zone</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mood-tracker.html" class="active">Mood Tracker</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <h2>Mood Tracker</h2>
+        <p>Track your mood and thoughts to understand yourself better.</p>
+    </div>
+
+    <div class="tracker-section">
+        <form id="mood-form">
+            <label for="mood">How are you feeling today?</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="angry">Angry</option>
+                <option value="anxious">Anxious</option>
+                <option value="neutral">Neutral</option>
+            </select>
+
+            <label for="thoughts">What's on your mind?</label>
+            <textarea id="thoughts" name="thoughts" rows="4" placeholder="Write your thoughts here..."></textarea>
+
+            <label for="energy-level">How would you rate your energy level?</label>
+            <select id="energy-level" name="energy-level">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="stress-level">How stressed are you right now?</label>
+            <select id="stress-level" name="stress-level">
+                <option value="not-stressed">Not Stressed</option>
+                <option value="some-stress">Some Stress</option>
+                <option value="very-stressed">Very Stressed</option>
+            </select>
+
+            <label for="gratitude">What are you grateful for today?</label>
+            <textarea id="gratitude" name="gratitude" rows="2" placeholder="Write what you're grateful for..."></textarea>
+
+            <label for="sleep-quality">How was your sleep last night?</label>
+            <select id="sleep-quality" name="sleep-quality">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label for="social-interaction">Did you have social interactions today?</label>
+            <select id="social-interaction" name="social-interaction">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="physical-activity">Did you exercise or engage in physical activity today?</label>
+            <select id="physical-activity" name="physical-activity">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="nutrition">How would you rate your nutrition today?</label>
+            <select id="nutrition" name="nutrition">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label for="self-care">Did you engage in any self-care activities today?</label>
+            <select id="self-care" name="self-care">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="stress-triggers">What triggered your stress today?</label>
+            <textarea id="stress-triggers" name="stress-triggers" rows="2" placeholder="Describe any stress triggers..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="report" class="report-section">
+            <h3>Your Mood Report</h3>
+            <p id="report-content"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Calm Zone. All rights reserved.</p>
+    </footer>
+
+    <script src="page2.js"></script>
+</body>
+</html>
